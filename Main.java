@@ -1,18 +1,15 @@
-package day9;
+package day10;
 
 public class Main {
-	public static void main(String args[]) {
-		//accessing values for MethodsTemp class in this class by creating object
-		MethodsTemp call=new MethodsTemp();
-		System.out.println(call.addition(10, 20));
-		System.out.println(call.subtraction(40, 20));
-		call.multiplication(4, 6);
-		call.division(30, 6);
-		call.modulus(60, 07);
-
-
-		
-		
+	public static void main(String[] args) {
+		Car car1=new Car();
+		car1.displayCarDetails();
+		Car car2=new Car("BMW");
+		car2.displayCarDetails();
+		Car car3=new Car("BMW",1999);
+		car3.displayCarDetails();
+		Car car4=new Car(1998,"Audi");
+		car4.displayCarDetails();
 	}
 
 }
